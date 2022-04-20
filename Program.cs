@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Getränk;
+
+Flasche f1 = new Flasche(9,20);
+Console.WriteLine(f1.Volumen);

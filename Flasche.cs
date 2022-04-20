@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Getränk
 {
-    internal class Flasche
+    internal abstract class Flasche
     {
         public double Durchmesser { get; set; }
 
         public double Höhe { get; set; }
 
-        public double Volumen {
+        public virtual double Volumen {
             get
             {
               return  Math.Pow(Durchmesser / 2, 2) * Math.PI * Höhe;
@@ -23,11 +23,11 @@ namespace Getränk
 }
             
 
-        public Flasche(double durchmesser, double höhe)
+        public Flasche( double höhe)
         {
-            this.Durchmesser = durchmesser;
+           
 
-            this.Höhe = höhe
+            this.Höhe = höhe;
 
 
  }       }
