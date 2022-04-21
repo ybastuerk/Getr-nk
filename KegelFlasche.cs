@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Getränk
 {
-    internal class KegelFlasche : Flasche
+    internal class KegelFlasche : ZylinderFlasche
     {
-        public KegelFlasche(double durchmesser, double höhe) : base(höhe)
+        public KegelFlasche(double durchmesser, double höhe) : base(durchmesser,höhe)
         {
-            this.Durchmesser = durchmesser;
+            
         }
 
         public override double Volumen 

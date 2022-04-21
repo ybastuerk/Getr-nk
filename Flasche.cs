@@ -8,19 +8,11 @@ namespace Getränk
 {
     internal abstract class Flasche
     {
-        public double Durchmesser { get; set; }
+       
 
         public double Höhe { get; set; }
 
-        public virtual double Volumen {
-            get
-            {
-              return  Math.Pow(Durchmesser / 2, 2) * Math.PI * Höhe;
-            }
-
-
-
-}
+        public abstract double Volumen { get; }
             
 
         public Flasche( double höhe)
